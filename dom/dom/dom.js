@@ -8,4 +8,4 @@ tab_host.onclick = function(){
     this.style.color = 'red';
     this.style.backgroundColor = 'pink';
 }
-// 3시간 걸렸내요 
+// 3시간 걸렸내요 ...
