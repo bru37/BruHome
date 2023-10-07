@@ -22,3 +22,4 @@ function division(arr) {
 }
 console.log(division(arr)); // 2. dvistion의 return으로 작성해놓고 함수 실행을 안했음
 // console.log(arr); -> 1. 선언하지도 않았기 떄문에 콘솔에 찍혔을리가 없다, 에러 발생
+//for문 정리하자
