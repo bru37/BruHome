@@ -9,28 +9,27 @@
 
 변수 c는 콜백함수 solution의 매게변수로 사용된다.
 
-변수 d는 <main의 콜백함수인 솔루션 함수에서 전달받은 c>와 연산할 변수이다.
-변수 e는 <main함수의 최종 반환 값으로 solution에서 d와 c를 더한 값의 반환 값>이기도 하다.
+변수 d는 <main의 콜백함수인 솔루션 함수에서 ><전달받은 c>와 연산할 변수이다.
+변수 e는 <main함수의 최종 반환 값으로 solution에서>< d와 c를 더한 값의 반환 값>이기도 하다.
 
 문제 해석은 각기 다를 수 있습니다. 중요한 것은 자신만의 관념으로 변수 위치를 찾는 것으로
 따로 답이 존재하지 않습니다.
 */
 
-function solution(c) {   //콜백함수  c는 매게변수
-  
-}
-
-function parse() {}
-
-function main() {
-  solution();
-}
-
-function main(c) {
-  let a;
-  let d;
-  e = c + d;
-  solution();
-}
 const b = document.querySelector(""); //단일 객체 반환이라서 선택함
 
+function solution(c) {
+  //조건문
+  let d;
+  return c + d;
+}
+// function parse() {}
+
+function main(c) {
+  //조건문에서 받은 콜백함수
+  let a;
+  let e = solution(c);
+  return e; //모든 함수 실행을 끝냄
+}
+
+console.log(main());
