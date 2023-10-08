@@ -8,7 +8,7 @@ ex) 길이기 80인 배열은 길이가 5로 분해한다면 16개의 배열을 
 */
 
 const arr = Array.from({ length: 80 }, (_, i) => i + 1);
-//1~80[1,2,3,4,5,6]
+//1~80[1,2,3,4,5,6],
 
 function division(arr) {
   let result = [];
