@@ -1,0 +1,84 @@
+함수 정의
+함수를 호출하기 전에 인수를 전달 받을 매개변수와 실행문들을, 반환값을 지정하는것을 말함
+
+함수선언문 ----->함수이름을 생략할수 없다, 함수리터럴은 함수이름 생략 가능
+
+function add(x,z);{
+    return x+z;
+}
+
+함수 표현식
+
+let add = function(x,z){
+    return x+z;
+};
+
+function생성자 함수
+
+let add = new function('x','z','return x+z');
+
+화살표 함수
+
+let add = (x,z) => x+y;
+
+
+let add = function add(x,z){
+   ---식별자        ---함수이름 
+    return x+z;
+};
+console.log(add(2,5));
+            --식별자
+
+
+let add = function (x,z){
+   ---식별자        
+    return x+z;
+};
+console.log(add(2,5));
+            --식별자
+
+//함수 리터럴은 함수이름을 생략할 수 있다. 이러한 함수를 익명함수라고 한다
+
+let add = function chacha(x,z){------>chacha라는 함수이름이 있는 기명함수
+   ---식별자        ---함수이름 
+    return x+z;
+};
+console.log(add(2,5));----->함수 객체를 가리키는 식별자 호출
+            --식별자
+console.log(chacha(2,5));------>함수이름으로 호출을 하게 되면 오류가 생김
+
+EX)
+
+function add (x,z){ ----->add 함수의 이름, (x,z) 매개변수
+    return x+z;---->반환값
+}//함수의 정의
+
+add(x,y);----->(x,z) 인수
+//함수호출
+
+let return = add(2,5);
+//함수호출
+
+console.log(return);//7
+//함수 add에 인수 2,5를 전달하면서 호출한 반환값 7
+
+함수의 리터럴
+
+fuction키워드, 함수이름, 매개변수목록, 함수몸체로 구성됨
+
+함수는 객체 타입의 값이다.
+
+EX)
+
+let A  = function add(x,z){
+---변수   -----------------함수 리털럴 
+    return x+z;
+};
+
+//변수에 함수 리터럴을 할당
+
+힘수 생성시점과 함수 호스팅
+
+함수선언문은 함수선언문 이전에 호출을 할수있다
+함수표현식은 함수표현식 이전에는 호출할수가 없다.
+
