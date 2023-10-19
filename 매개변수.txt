@@ -12,6 +12,13 @@ function addNum(x,y,z){  //addNum()는  x,y,z 라는 3개의 매개변수를 가
 
 addNum(1,2,3); // 인수 123 을 전달 하여 함수로 호출
 
+function add(x,z){
+    console.log(x,z);
+    return x + z;
+}
+add(3,7);----------->함수 내부에만 참조 할 수 있음
+console.lod(x,z);------------>외부에 있기 떄문에 참조 할 수 없음
+
 인수(arguments)객체
 
 인수객체는 함수가 호출될 떄 전달된 인수를 배열의 형채로 저장할수있다

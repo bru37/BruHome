@@ -82,3 +82,12 @@ let A  = function add(x,z){
 함수선언문은 함수선언문 이전에 호출을 할수있다
 함수표현식은 함수표현식 이전에는 호출할수가 없다.
 
+반환문
+
+function multiply(x,z){
+    return x * z; ------->반환문
+    console.log('실행되지 않음')------>반환문 이후에 다른 문이 있으면 실행되지 않음
+}
+
+console.log(multiply(3,5));
+//15
