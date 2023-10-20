@@ -5,7 +5,7 @@
 
 function add(x,z);{
     return x+z;
-}
+}...
 
 함수 표현식
 
