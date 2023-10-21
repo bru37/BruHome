@@ -27,7 +27,7 @@ let add = function add(x,z){
     return x+z;
 };
 console.log(add(2,5));
-            --식별자
+            --식별자....
 
 
 let add = function (x,z){
