@@ -6,9 +6,10 @@
 function add(x,z);{
     return x+z;
 }...
-
 함수 표현식
 
+
+안녕하세요
 let add = function(x,z){
     return x+z;
 };
