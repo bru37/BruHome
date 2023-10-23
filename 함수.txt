@@ -7,7 +7,9 @@ function add(x,z);{
     return x+z;
 }...
 
+
 함수 표현식
+
 
 let add = function(x,z){
     return x+z;
@@ -27,7 +29,9 @@ let add = function add(x,z){
     return x+z;
 };
 console.log(add(2,5));
+
             --식별자
+
 
 
 let add = function (x,z){
