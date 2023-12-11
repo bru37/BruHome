@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { Provider, useDispatch, useSelector } from "react-redux";
+import { fetchIssuesAsync } from "./redux/issuesAsync";
+import IssueList from "./components/IssueList";
+import IssueDetail from "./components/IssueDetail";
+import store from "./redux/store"; // 별도 파일에서 스토어 가져오기
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const dispatch = useDispatch();
+    const issues = useSelector((state) => state.issues.data);
+    const loading = useSelector((state) => state.issues.loading);
+    const error = useSelector((state) => state.issues.error);
+
+    useEffect(() => {
+        dispatch(fetchIssuesAsync());
+    }, [dispatch]);
+
+    if (loading) {
+        return <p>Loading...</p>;
+    }
+
+    if (error) {
+        return <p>Error: {error}</p>;
+    }
+
+    return (
+        <Provider store={store}>
+            <h1>GitHub Issues</h1>
+            <IssueList issues={issues} />
+            {issues.length > 0 && <IssueDetail issue={issues[0]} />}
+        </Provider>
+    );
+};
 
 export default App;
