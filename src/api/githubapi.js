@@ -22,7 +22,7 @@ export const fetchIssues = async (page = 1, perPage = 10) => {
     }
 };
 
-// import axios from "axios";-->API를 시작하기 위한 코드
+// import axios from "axios";-->API를 시작하기 위한 코드...
 
 // -간편하고 사용하기 쉬운 API를 제공함,HTTP(요청과 응답)요청을 간단하게 수행하기위한 라이브러리(get, post, put, delete..등)
 // -Promise를 기반으로 하는 비동기 처리를 지원 비동기 작업을 쉽게함
