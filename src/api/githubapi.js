@@ -31,7 +31,7 @@ export const fetchIssues = async (page = 1, perPage = 10) => {
 
 // -GitHub API의 기본 URL을 나타내고 GitHub API의 기본 URL은 https://api.github.com이다
 
-// const OWNER = "angular";
+// const OWNER = "angular";ㅣㅣ
 
 // -GitHub 리포지토리의 소유자(Owner)를 나타내며 angular은 소유자를 뜻함
 
